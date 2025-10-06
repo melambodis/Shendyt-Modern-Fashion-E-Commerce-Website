@@ -1,0 +1,87 @@
+/* Summary */
+.summary {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.summary h2 {
+  margin-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.totalRow {
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-top: 1px solid #ddd;
+  padding-top: 0.5rem;
+}
+
+.coupon {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.coupon input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+}
+
+.coupon button {
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.coupon button:hover {
+  background: #0056b3;
+}
+
+.checkoutBtn {
+  width: 100%;
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 1rem;
+}
+
+.checkoutBtn:hover {
+  background: #0056b3;
+}
+
+.continue {
+  display: block;
+  text-align: center;
+  color: #007bff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.continue:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}

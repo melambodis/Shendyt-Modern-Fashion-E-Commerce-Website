@@ -1,0 +1,370 @@
+/* @import url("../../../styles/globals.css"); */
+
+/* ===============================
+   Base Button
+=================================*/
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--space-sm);
+  transition: all 0.3s ease;
+  position: relative;
+  text-align: center;
+  line-height: 1.2;
+  user-select: none;
+  outline: none;
+}
+
+/* ===============================
+   Wishlist Button (special case)
+=================================*/
+/* Variant Wishlist */
+
+.wishlist {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--secondary-6);
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-medium);
+}
+
+.wishlist svg {
+  transition: transform 0.3s ease-in-out;
+}
+.wishlist:hover svg {
+  transform: scale(1.4);
+}
+
+/* ===============================
+   Sizes Btn
+=================================*/
+.xsmall {
+  padding: 2px 6px;
+  font-size: 0.7rem;
+  border-radius: 4px;
+}
+
+.small {
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
+.medium {
+  padding: 7px 14px;
+  font-size: 0.8rem;
+  border-radius: 6px;
+}
+
+.large {
+  padding: 12px 20px;
+  font-size: 0.7rem;
+  border-radius: 8px;
+}
+
+.xlarge {
+  padding: 12px 22px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.fullWidth {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wish-btn-size {
+  padding: var(--space-md) var(--space-xl);
+  font-size: var(--text-6xl);
+}
+.btn-square-xsmall {
+  width: 28px;
+  height: 28px;
+}
+
+.btn-square-small {
+  width: 36px;
+  height: 36px;
+}
+
+.btn-square-medium {
+  width: 44px;
+  height: 44px;
+}
+
+.btn-square-large {
+  width: 52px;
+  height: 52px;
+}
+
+.btn-square-xlarge {
+  width: 64px;
+  height: 64px;
+}
+
+/* ===============================
+   Variants
+=================================*/
+.primary {
+  background-color: var(--primary-6);
+  color: var(--btn-primary-text);
+}
+.outline {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+.secondary {
+  background-color: var(--btn-secondary-bg);
+  color: var(--btn-secondary-text);
+}
+
+.success {
+  background-color: var(--btn-success-bg);
+  color: var(--btn-success-text);
+}
+.danger {
+  background-color: var(--btn-danger-bg);
+  color: var(--btn-danger-text);
+}
+.warning {
+  background-color: var(--btn-warning-bg);
+  color: var(--btn-warning-text);
+}
+.info {
+  background-color: var(--info-6);
+  color: var(--btn-info-text);
+}
+.outline {
+  background-color: transparent;
+  border: 2px solid var(--btn-primary-bg);
+  color: var(--btn-primary-bg);
+}
+.ghost {
+  background-color: transparent;
+  color: var(--text);
+  box-shadow: none;
+}
+.link {
+  background: none;
+  border: none;
+  color: var(--link-color, #007bff);
+  padding: 0;
+  text-decoration: underline;
+  font-weight: normal;
+}
+.dark {
+  background-color: #1f2937;
+  color: #fff;
+}
+.light {
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* ===============================
+   States
+=================================*/
+.btn:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+.btn:active:not(:disabled) {
+  transform: scale(0.97);
+}
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* ===============================
+   Icon Button (circle buttons)
+=================================*/
+
+.iconBtn:hover {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+
+/* ===============================
+   Icons
+=================================*/
+.iconLeft {
+  margin-right: var(--space-xs);
+  display: inline-flex;
+}
+.iconRight {
+  margin-left: var(--space-xs);
+  display: inline-flex;
+}
+.iconCenter {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===============================
+   Spinner
+=================================*/
+.spinner {
+  width: var(--space-2xl);
+  height: var(--space-2xl);
+  margin-right: var(--space-xs);
+  animation: spin 1s linear infinite;
+}
+.path {
+  stroke: currentColor;
+  stroke-linecap: round;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* ===============================
+   Hover Effects (extras)
+=================================*/
+.glow:hover {
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.6);
+}
+.scale:hover {
+  transform: scale(1.05);
+}
+.pulse {
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.85;
+  }
+}
+
+/* ===============================
+   Label
+=================================*/
+.label {
+  display: inline-block;
+}
+
+/* IconColor  */
+.primary-color {
+  color: var(--btn-primary-bg);
+}
+.btn:hover .primary-color-Ho {
+  transition: var(--transition-medium);
+  color: var(--btn-primary-bg);
+}
+.secondary-color {
+  color: var(--btn-secondary-bg);
+}
+.btn:hover .secondary-color-Ho {
+  transition: var(--transition-medium);
+  color: var(--btn-secondary-bg);
+}
+.success-color {
+  color: var(--btn-success-bg);
+}
+.btn:hover .success-color-Ho {
+  transition: var(--transition-medium);
+  color: var(--btn-success-bg);
+}
+.danger-color {
+  color: var(--btn-danger-bg);
+}
+.btn:hover .danger-color-Ho {
+  transition: var(--transition-medium);
+  color: var(--btn-danger-bg);
+}
+.warning-color {
+  color: var(--btn-warning-bg);
+}
+.btn:hover .warning-color-Ho {
+  transition: var(--transition-medium);
+  color: var(--btn-warning-bg);
+}
+.info-color {
+  color: var(--btn-info-bg);
+}
+.btn:hover .info-color-Ho {
+  transition: var(--transition-medium);
+  color: var(--btn-info-bg);
+}
+.dark-color {
+  color: #1f2937;
+}
+.btn:hover .dark-color-Ho {
+  transition: var(--transition-medium);
+  color: #1f2937;
+}
+.light-color {
+  color: #f9fafb;
+}
+.btn:hover .light-color-Ho {
+  transition: var(--transition-medium);
+  color: #f9fafb;
+}
+
+.icon-3xs {
+  font-size: var(--size-3xs);
+}
+.icon-2xs {
+  font-size: var(--size-2xs);
+}
+.icon-xs {
+  font-size: var(--size-xs);
+}
+.icon-sm {
+  font-size: var(--size-sm);
+}
+.icon-base {
+  font-size: var(--size-base);
+}
+.icon-md {
+  font-size: var(--size-md);
+}
+.icon-lg {
+  font-size: var(--size-lg);
+}
+.icon-xl {
+  font-size: var(--size-xl);
+}
+.icon-2xl {
+  font-size: var(--size-2xl);
+}
+.icon-3xl {
+  font-size: var(--size-3xl);
+}
+.icon-4xl {
+  font-size: var(--size-4xl);
+}
+.icon-5xl {
+  font-size: var(--size-5xl);
+}
+.icon-6xl {
+  font-size: var(--size-6xl);
+}
+.icon-7xl {
+  font-size: var(--size-7xl);
+}
+.icon-8xl {
+  font-size: var(--size-8xl);
+}
+.icon-9xl {
+  font-size: var(--size-9xl);
+}

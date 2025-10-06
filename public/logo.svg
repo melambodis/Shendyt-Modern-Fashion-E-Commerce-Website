@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="230" height="60" viewBox="0 0 300 60" fill="none">
+
+  <!-- Icon: Minimal stylish hanger -->
+  <g id="icon">
+    <path d="M40 60 L60 20 C62 15 68 15 70 20 L90 60" 
+          stroke="#ffb5c1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="55" y1="40" x2="75" y2="40" 
+          stroke="#ffb5c1" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Brand Name -->
+  <text x="150" y="30" 
+        font-family="Helvetica, Arial, sans-serif" 
+        font-size="36" font-weight="700" fill="#9ac8fd"
+        text-anchor="middle" dominant-baseline="middle">
+    Shendyt
+  </text>
+</svg>

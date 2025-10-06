@@ -1,0 +1,94 @@
+
+@import url("../../ui//Button//Button.module.css");
+
+.topBar {
+  display: flex;
+  align-items: center;
+  padding: 25px 0px ;
+}
+
+ .content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+/* .Logo{
+  flex: 1 1 30%;
+} */
+.searchWrap {
+  flex: 0 0 50%;
+  max-width: 500px;
+  min-width: 150px;
+  position: relative;
+}
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: var(--secondary-6);
+}
+
+.Input {
+  width: 100%;
+  padding: 0.6rem 0.8rem 0.6rem 2.2rem; 
+}
+
+.userMenuWrap {
+  display: flex;
+  justify-content: flex-end;
+  width: 200px;
+}
+
+.btnopen{
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  z-index: 10001;
+}
+
+
+
+
+@media (max-width: 768px) {
+ .content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+}
+
+@media (max-width: 480px) {
+.BtNmedia{
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+   .content {
+     display: flex;
+     flex-direction: column;  /* خلي العناصر عمود */
+     align-items: flex-start; /* مش stretch */
+     flex-wrap: wrap;
+   }
+
+   .searchWrap {
+     width: 100%;
+     max-width: 100%;
+     flex: 1 1 100%;
+     order: 3;
+   }
+
+   .userMenuWrap {
+     order: 1;
+   }
+
+   .Logo {
+     order: 2;
+   }
+}
+

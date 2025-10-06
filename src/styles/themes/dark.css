@@ -1,0 +1,203 @@
+/* Dark Theme Overrides */
+[data-theme="dark"] {
+  /* Base Color Palettes - Dark Mode */
+  --gray-0: #212529;
+  --gray-1: #343a40;
+  --gray-2: #495057;
+  --gray-3: #868e96;
+  --gray-4: #adb5bd;
+  --gray-5: #ced4da;
+  --gray-6: #dee2e6;
+  --gray-7: #e9ecef;
+  --gray-8: #f1f3f5;
+  --gray-9: #f8f9fa;
+
+  --neutral-0: #1f1f1f;
+  --neutral-1: #262626;
+  --neutral-2: #434343;
+  --neutral-3: #595959;
+  --neutral-4: #8c8c8c;
+  --neutral-5: #bfbfbf;
+  --neutral-6: #d9d9d9;
+  --neutral-7: #e8e8e8;
+  --neutral-8: #f5f5f5;
+  --neutral-9: #fafafa;
+
+  --primary-0: #0d3a7d;
+  --primary-1: #13489b;
+  --primary-2: #1d5cb4;
+  --primary-3: #2d74c7;
+  --primary-4: #4a90e2;
+  --primary-5: #69a9fa;
+  --primary-6: #9ac8fd;
+  --primary-7: #c7e2ff;
+  --primary-8: #e1effe;
+  --primary-9: #f0f7ff;
+
+  --secondary-0: #8b132b;
+  --secondary-1: #a71c38;
+  --secondary-2: #c52a48;
+  --secondary-3: #e23e5c;
+  --secondary-4: #fa5a76;
+  --secondary-5: #ff879c;
+  --secondary-6: #ffb5c1;
+  --secondary-7: #ffd7de;
+  --secondary-8: #ffe9ec;
+  --secondary-9: #fff5f7;
+
+  /* Semantic Color Tokens - Dark Mode */
+  --text: var(--neutral-8);
+  --text-muted: var(--neutral-5);
+  --text-inverse: var(--neutral-0);
+  --text-link: var(--primary-4);
+  --text-link-hover: var(--primary-3);
+
+  /* Background Colors */
+  --bg: var(--neutral-0);
+  --bg-soft: var(--neutral-1);
+  --bg-elevated: var(--neutral-2);
+  --bg-inverse: var(--neutral-8);
+
+  /* Borders & Dividers */
+  --border: var(--neutral-3);
+  --border-strong: var(--neutral-4);
+
+  /* Focus & Selection */
+  --focus-ring: var(--primary-5);
+  --selection: var(--primary-8);
+
+  /* State Colors */
+  --success-surface: var(--success-9);
+  --success-text: var(--success-3);
+  --success-border: var(--success-7);
+
+  --warning-surface: var(--warning-9);
+  --warning-text: var(--warning-3);
+  --warning-border: var(--warning-7);
+
+  --danger-surface: var(--danger-9);
+  --danger-text: var(--danger-3);
+  --danger-border: var(--danger-7);
+
+  --info-surface: var(--info-9);
+  --info-text: var(--info-3);
+  --info-border: var(--info-7);
+
+  /* Brand Semantic Colors */
+  --brand-surface: var(--primary-9);
+  --brand-border: var(--primary-7);
+
+  /* Component Tokens - Dark Mode */
+  /* Buttons */
+  --btn-primary-bg: var(--primary-4);
+  --btn-primary-text: var(--neutral-9);
+  --btn-primary-border: var(--primary-4);
+  --btn-primary-hover-bg: var(--primary-3);
+  --btn-primary-hover-border: var(--primary-3);
+  --btn-primary-active-bg: var(--primary-2);
+  --btn-primary-active-border: var(--primary-2);
+  --btn-primary-disabled-bg: var(--primary-8);
+  --btn-primary-disabled-text: var(--primary-5);
+  --btn-primary-disabled-border: var(--primary-8);
+
+  --btn-secondary-bg: var(--secondary-4);
+  --btn-secondary-text: var(--neutral-9);
+  --btn-secondary-border: var(--secondary-4);
+  --btn-secondary-hover-bg: var(--secondary-3);
+  --btn-secondary-hover-border: var(--secondary-3);
+  --btn-secondary-active-bg: var(--secondary-2);
+  --btn-secondary-active-border: var(--secondary-2);
+
+  --btn-success-bg: var(--success-4);
+  --btn-success-text: var(--neutral-9);
+  --btn-success-border: var(--success-4);
+  --btn-success-hover-bg: var(--success-3);
+  --btn-success-hover-border: var(--success-3);
+  --btn-success-active-bg: var(--success-2);
+  --btn-success-active-border: var(--success-2);
+
+  --btn-warning-bg: var(--warning-4);
+  --btn-warning-text: var(--neutral-9);
+  --btn-warning-border: var(--warning-4);
+  --btn-warning-hover-bg: var(--warning-3);
+  --btn-warning-hover-border: var(--warning-3);
+  --btn-warning-active-bg: var(--warning-2);
+  --btn-warning-active-border: var(--warning-2);
+
+  --btn-danger-bg: var(--danger-4);
+  --btn-danger-text: var(--neutral-9);
+  --btn-danger-border: var(--danger-4);
+  --btn-danger-hover-bg: var(--danger-3);
+  --btn-danger-hover-border: var(--danger-3);
+  --btn-danger-active-bg: var(--danger-2);
+  --btn-danger-active-border: var(--danger-2);
+
+  --btn-ghost-bg: transparent;
+  --btn-ghost-text: var(--primary-4);
+  --btn-ghost-border: transparent;
+  --btn-ghost-hover-bg: var(--primary-8);
+  --btn-ghost-hover-text: var(--primary-3);
+  --btn-ghost-active-bg: var(--primary-7);
+  --btn-ghost-active-text: var(--primary-2);
+
+  --btn-link-bg: transparent;
+  --btn-link-text: var(--primary-4);
+  --btn-link-border: transparent;
+  --btn-link-hover-bg: transparent;
+  --btn-link-hover-text: var(--primary-3);
+  --btn-link-active-bg: transparent;
+  --btn-link-active-text: var(--primary-2);
+
+  /* Navbar */
+  --nav-bg: var(--neutral-1);
+  --nav-text: var(--neutral-7);
+  --nav-border: var(--neutral-2);
+  --nav-link: var(--neutral-6);
+  --nav-link-active: var(--primary-4);
+  --nav-link-hover: var(--primary-3);
+
+  /* Links */
+  --link: var(--text-link);
+  --link-hover: var(--text-link-hover);
+  --link-visited: var(--primary-3);
+  --link-active: var(--primary-2);
+
+  /* Cards */
+  --card-bg: var(--bg-elevated);
+  --card-border: var(--border);
+
+  /* Inputs */
+  --input-bg: var(--neutral-1);
+  --input-text: var(--text);
+  --input-placeholder: var(--neutral-4);
+  --input-border: var(--border);
+  --input-focus: var(--primary-5);
+  --input-hover-border: var(--neutral-4);
+
+  /* Badges/Chips */
+  --badge-default-bg: var(--neutral-3);
+  --badge-default-text: var(--neutral-8);
+  --badge-primary-bg: var(--primary-8);
+  --badge-primary-text: var(--primary-3);
+  --badge-success-bg: var(--success-8);
+  --badge-success-text: var(--success-3);
+  --badge-warning-bg: var(--warning-8);
+  --badge-warning-text: var(--warning-3);
+  --badge-danger-bg: var(--danger-8);
+  --badge-danger-text: var(--danger-3);
+
+  /* Modals */
+  --modal-bg: var(--neutral-1);
+  --modal-border: var(--neutral-3);
+
+  /* Tooltips */
+  --tooltip-bg: var(--neutral-8);
+  --tooltip-text: var(--neutral-0);
+  --tooltip-border: var(--neutral-6);
+
+  /* Tables */
+  --table-header-bg: var(--neutral-2);
+  --table-row-bg: transparent;
+  --table-row-alt-bg: var(--neutral-1);
+  --table-border: var(--neutral-3);
+}

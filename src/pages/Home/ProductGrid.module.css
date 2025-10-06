@@ -1,0 +1,9 @@
+.productwrape {
+  margin:  10px 0;
+   display: grid;
+   align-items: start;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  align-items: stretch;
+  gap: 20px;
+}

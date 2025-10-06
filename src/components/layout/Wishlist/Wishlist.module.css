@@ -1,0 +1,107 @@
+.Container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 1rem;
+  flex: 1;
+}
+
+.productName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.productPrice {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #16a34a;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.addButton,
+.removeButton {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.addButton {
+  margin-right: 0.5rem;
+  background: #3b82f6;
+  color: #fff;
+}
+
+.addButton:hover {
+  background: #2563eb;
+}
+
+.removeButton {
+  background: #ef4444;
+  color: #fff;
+}
+
+.removeButton:hover {
+  background: #dc2626;
+}
+
+.empty {
+  font-size: 1rem;
+  color: #64748b;
+  text-align: center;
+  grid-column: 1 / -1;
+}

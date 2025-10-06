@@ -1,0 +1,73 @@
+
+.maintype {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px var(--gray-4);
+}
+
+.headinGender {
+  flex-basis: 30%;
+  color: var(--secondary-3);
+}
+
+.typelist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: var(--size-2xl);
+  color: var(--secondary-4);
+}
+
+.productwrape {
+  padding:  0 15px;
+   display: grid;
+   align-items: start;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  align-items: stretch;
+  gap: 20px;
+}
+
+/* @media min-width: 768px */
+
+.maintypeSelct {
+  margin: 10px;
+}
+
+.maintypeSelct label {
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.typeSelct {
+  width: 200px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.typeSelct:hover {
+  border-color: var(--primary-6);
+}
+
+.typeSelct:focus {
+  outline: none;
+  border-color: var(--primary-6);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.typeoption {
+  font-size: 14px;
+  padding: 5px;
+  color: rebeccapurple;
+}

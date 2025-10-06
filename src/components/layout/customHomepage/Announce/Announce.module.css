@@ -1,0 +1,30 @@
+.announceheader {
+  font-size: 0.9rem;
+  color: var(--brand);
+  text-align: center;
+  padding: 0.25rem 0;
+}
+
+.announce {
+  padding: 4rem 2rem;
+  margin: 3rem 0;
+  border-radius: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.gradient {
+  padding:  20px 0;
+  background: linear-gradient(120deg, #9643f0, #3273e5);
+  color: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  text-align: center;
+}
+.nature {
+  padding:  20px 0;
+  background: linear-gradient(135deg, #c8e6c9, #a5d6a7);
+  color: #1b5e20;
+  text-align: center;
+}
+

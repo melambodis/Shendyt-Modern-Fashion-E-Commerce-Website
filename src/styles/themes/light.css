@@ -1,0 +1,214 @@
+/* Light Theme Semantic Tokens */
+
+:root {
+  /* Text Colors */
+  --text: var(--neutral-9);
+  --text-muted: var(--neutral-6);
+  --text-inverse: var(--neutral-0);
+  --text-link: var(--primary-7);
+  --text-link-hover: var(--primary-8);
+
+  /* Background Colors */
+  --bg: var(--neutral-0);
+  --bg-soft: var(--neutral-1);
+  --bg-elevated: #ffffff;
+  --bg-inverse: var(--neutral-9);
+
+  /* Borders & Dividers */
+  --border: var(--neutral-3);
+  --border-strong: var(--neutral-4);
+
+  /* Focus & Selection */
+  --focus-ring: var(--primary-4);
+  --selection: var(--primary-2);
+
+  /* State Colors */
+  --success: var(--success-6);
+  --success-surface: var(--success-1);
+  --success-text: var(--success-8);
+  --success-border: var(--success-3);
+
+  --warning: var(--warning-6);
+  --warning-surface: var(--warning-1);
+  --warning-text: var(--warning-8);
+  --warning-border: var(--warning-3);
+
+  --danger: var(--danger-6);
+  --danger-surface: var(--danger-1);
+  --danger-text: var(--danger-8);
+  --danger-border: var(--danger-3);
+
+  --info: var(--info-6);
+  --info-surface: var(--info-1);
+  --info-text: var(--info-8);
+  --info-border: var(--info-3);
+
+  /* Brand Semantic Colors */
+  --brand: var(--primary-6); /* اللون الرئيسي للعلامة التجارية */
+  --brand-contrast: #ffffff; /* اللون اللي يتباين مع اللون الرئيسي (عادة للنصوص) */
+  --brand-surface: var(--primary-1); /* لون خلفيات سطحية أو بطاقات/مكونات */
+  --brand-border: var(--primary-3); /* لون الحدود للعلامة التجارية */
+
+  /* Component Tokens */
+  /* Buttons */
+  /* ألوان زرار Primary */
+  --btn-primary-bg: var(--primary-6); /* خلفية الزرار الأساسي */
+  --btn-primary-text: var(--brand-contrast); /* لون نص الزرار الأساسي */
+  --btn-primary-border: var(--primary-6); /* لون حدود الزرار الأساسي */
+  --btn-primary-hover-bg: var(--primary-7); /* خلفية الزر عند المرور بالماوس */
+  --btn-primary-hover-text: var(
+    --brand-contrast
+  ); /* لون نص الزر عند المرور بالماوس */
+  --btn-primary-hover-border: var(
+    --primary-7
+  ); /* لون الحدود عند المرور بالماوس */
+  --btn-primary-active-bg: var(--primary-8); /* خلفية الزر عند الضغط */
+  --btn-primary-active-text: var(--brand-contrast); /* لون نص الزر عند الضغط */
+  --btn-primary-active-border: var(--primary-8); /* لون الحدود عند الضغط */
+  --btn-primary-disabled-bg: var(--primary-2); /* خلفية الزر الغير نشط */
+  --btn-primary-disabled-text: var(--primary-5); /* لون النص للزر الغير نشط */
+  --btn-primary-disabled-border: var(
+    --primary-2
+  ); /* لون الحدود للزر الغير نشط */
+
+  /* ألوان زرار Secondary */
+  --btn-secondary-bg: var(--secondary-5); /* خلفية الزر الثانوي */
+  --btn-secondary-text: var(--brand-contrast); /* لون نص الزر الثانوي */
+  --btn-secondary-border: var(--secondary-5); /* حدود الزر الثانوي */
+  --btn-secondary-hover-bg: var(
+    --secondary-6
+  ); /* خلفية الزر الثانوي عند المرور */
+  --btn-secondary-hover-text: var(--brand-contrast); /* نص الزر عند المرور */
+  --btn-secondary-hover-border: var(--secondary-6); /* حدود الزر عند المرور */
+  --btn-secondary-active-bg: var(--secondary-7); /* خلفية الزر عند الضغط */
+  --btn-secondary-active-text: var(--brand-contrast); /* نص الزر عند الضغط */
+  --btn-secondary-active-border: var(--secondary-7); /* حدود الزر عند الضغط */
+  --btn-secondary-disabled-bg: var(--secondary-2); /* خلفية الزر الغير نشط */
+  --btn-secondary-disabled-text: var(--secondary-5); /* نص الزر الغير نشط */
+  --btn-secondary-disabled-border: var(--secondary-2); /* حدود الزر الغير نشط */
+
+  /* Success, Warning, Danger variants */
+  /* زرار النجاح */
+  --btn-success-bg: var(--success-5); /* خلفية الزر */
+  --btn-success-text: var(--brand-contrast); /* نص الزر */
+  --btn-success-border: var(--success-5); /* حدود الزر */
+  --btn-success-hover-bg: var(--success-6); /* خلفية عند المرور */
+  --btn-success-hover-border: var(--success-6); /* حدود عند المرور */
+  --btn-success-active-bg: var(--success-7); /* خلفية عند الضغط */
+  --btn-success-active-border: var(--success-7); /* حدود عند الضغط */
+
+  /* زرار التحذير */
+  --btn-warning-bg: var(--warning-5); /* خلفية الزر */
+  --btn-warning-text: var(--brand-contrast); /* نص الزر */
+  --btn-warning-border: var(--warning-5); /* حدود الزر */
+  --btn-warning-hover-bg: var(--warning-6); /* خلفية عند المرور */
+  --btn-warning-hover-border: var(--warning-6); /* حدود عند المرور */
+  --btn-warning-active-bg: var(--warning-7); /* خلفية عند الضغط */
+  --btn-warning-active-border: var(--warning-7); /* حدود عند الضغط */
+
+  /* زرار الخطر */
+  --btn-danger-bg: var(--danger-5); /* خلفية الزر */
+  --btn-danger-text: var(--brand-contrast); /* نص الزر */
+  --btn-danger-border: var(--danger-5); /* حدود الزر */
+  --btn-danger-hover-bg: var(--danger-6); /* خلفية عند المرور */
+  --btn-danger-hover-border: var(--danger-6); /* حدود عند المرور */
+  --btn-danger-active-bg: var(--danger-7); /* خلفية عند الضغط */
+  --btn-danger-active-border: var(--danger-7); /* حدود عند الضغط */
+
+  /* Info Button Variables */
+  --btn-info-bg: var(--info-5); /* اللون الأساسي للزرار */
+  --btn-info-text: #ffffff; /* لون النص على الزرار */
+  --btn-info-border: var(--info-5); /* لون الحدود */
+
+  --btn-info-hover-bg: var(--info-6); /* لون الخلفية عند المرور */
+  --btn-info-hover-text: #ffffff; /* لون النص عند المرور */
+  --btn-info-hover-border: var(--info-6); /* لون الحدود عند المرور */
+
+  --btn-info-active-bg: var(--info-7); /* لون الخلفية عند الضغط */
+  --btn-info-active-text: #ffffff; /* لون النص عند الضغط */
+  --btn-info-active-border: var(--info-7); /* لون الحدود عند الضغط */
+
+  --btn-info-disabled-bg: var(--info-2); /* لون الخلفية عند التعطيل */
+  --btn-info-disabled-text: #94a3b8; /* لون النص عند التعطيل */
+  --btn-info-disabled-border: var(--info-2); /* لون الحدود عند التعطيل */
+
+  /* Ghost button */
+  /* زرار شفاف */
+  --btn-ghost-bg: transparent; /* خلفية شفافة */
+  --btn-ghost-text: var(--primary-6); /* نص باللون الرئيسي */
+  --btn-ghost-border: transparent; /* حدود شفافة */
+  --btn-ghost-hover-bg: var(--primary-1); /* خلفية عند المرور */
+  --btn-ghost-hover-text: var(--primary-7); /* نص عند المرور */
+  --btn-ghost-hover-border: transparent; /* حدود عند المرور */
+  --btn-ghost-active-bg: var(--primary-2); /* خلفية عند الضغط */
+  --btn-ghost-active-text: var(--primary-8); /* نص عند الضغط */
+  --btn-ghost-active-border: transparent; /* حدود عند الضغط */
+
+  /* Link button */
+  /* زرار رابط */
+  --btn-link-bg: transparent; /* خلفية شفافة */
+  --btn-link-text: var(--primary-6); /* نص باللون الرئيسي */
+  --btn-link-border: transparent; /* حدود شفافة */
+  --btn-link-hover-bg: transparent; /* خلفية عند المرور */
+  --btn-link-hover-text: var(--primary-7); /* نص عند المرور */
+  --btn-link-hover-border: transparent; /* حدود عند المرور */
+  --btn-link-active-bg: transparent; /* خلفية عند الضغط */
+  --btn-link-active-text: var(--primary-8); /* نص عند الضغط */
+  --btn-link-active-border: transparent; /* حدود عند الضغط */
+
+  /* Navbar */
+  --nav-bg: #ffffff;
+  --nav-text: var(--neutral-8);
+  --nav-border: var(--neutral-2);
+  --nav-link: var(--neutral-7);
+  --nav-link-active: var(--primary-6);
+  --nav-link-hover: var(--primary-7);
+
+  /* Links */
+  --link: var(--text-link);
+  --link-hover: var(--text-link-hover);
+  --link-visited: var(--primary-8);
+  --link-active: var(--primary-9);
+
+  /* Cards */
+  --card-bg: var(--bg-elevated);
+  --card-text: var(--text);
+  --card-border: var(--border);
+
+  /* Inputs */
+  --input-bg: #ffffff;
+  --input-text: var(--text);
+  --input-placeholder: var(--neutral-5);
+  --input-border: var(--border);
+  --input-focus: var(--primary-5);
+  --input-hover-border: var(--neutral-5);
+
+  /* Badges/Chips */
+  --badge-default-bg: var(--neutral-2);
+  --badge-default-text: var(--neutral-7);
+  --badge-primary-bg: var(--primary-1);
+  --badge-primary-text: var(--primary-7);
+  --badge-success-bg: var(--success-1);
+  --badge-success-text: var(--success-7);
+  --badge-warning-bg: var(--warning-1);
+  --badge-warning-text: var(--warning-7);
+  --badge-danger-bg: var(--danger-1);
+  --badge-danger-text: var(--danger-7);
+
+  /* Modals */
+  --modal-overlay: rgba(0, 0, 0, 0.5);
+  --modal-bg: var(--bg-elevated);
+  --modal-text: var(--text);
+  --modal-border: var(--border);
+
+  /* Tooltips */
+  --tooltip-bg: var(--neutral-9);
+  --tooltip-text: var(--neutral-0);
+  --tooltip-border: var(--neutral-9);
+
+  /* Tables */
+  --table-header-bg: var(--neutral-1);
+  --table-row-bg: transparent;
+  --table-row-alt-bg: var(--neutral-0);
+  --table-border: var(--border);
+}

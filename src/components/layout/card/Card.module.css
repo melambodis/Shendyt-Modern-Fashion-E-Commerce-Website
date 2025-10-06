@@ -1,0 +1,189 @@
+
+/* @import url("../../../styles/globals.css"); */
+.card {
+  height: auto;    
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-bg, #fff);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  color: var(--text-color, #111827);
+  position: relative;
+}
+
+/* Variants */
+.default {
+  border: 1px solid #e6e8eb;
+}
+.outlined {
+  border: 1px solid #d1d5db;
+}
+.elevated {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+.hover-shadow {
+  box-shadow: 0 0 0 transparent;
+  transition: box-shadow 0.2s ease;
+}
+.hover-shadow:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+
+.small {
+  width: 180px;
+  font-size: 0.875rem;
+}
+.medium {
+  width: 240px;
+  font-size: 1rem;
+}
+.large {
+  width: 320px;
+  font-size: 1.05rem;
+}
+
+/* Layouts */
+.grid {
+  flex-direction: column;
+}
+.list {
+  flex-direction: row;
+  gap: 12px;
+}
+
+/* Hover effects */
+.lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1);
+}
+.shadow:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+.scale:hover {
+  transform: scale(1.03);
+}
+
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+}
+
+.mainImage,
+.altImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out; 
+}
+
+
+.showMain {
+  opacity: 1;
+  scale: 1.1;
+}
+.hideMain {
+  opacity: 0;
+}
+
+
+.showAlt {
+  scale: 1.1;
+  opacity: 1;
+}
+.hideAlt {
+  opacity: 0;
+}
+
+
+
+
+.skeleton {
+  width: 100%;
+  height: 200px;
+  background: #f0f0f0;
+  animation: pulse 1.2s infinite;
+}
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* Badges */
+.badges {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.badge {
+  background-color: var(--badge-bg, #ff3b30);
+  color: #fff;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+/* Content */
+.content {
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.title {
+  font-weight: 600;
+  margin: 0;
+}
+.subtitle {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.9em;
+}
+.children {
+  margin-top: 0px;
+}
+
+/* Footer actions */
+.footer {
+  padding: 8px 16px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .small {
+    width: 140px;
+  }
+  .medium {
+    width: 200px;
+  }
+  .large {
+    width: 280px;
+  }
+  .list {
+    flex-direction: column;
+  }
+}

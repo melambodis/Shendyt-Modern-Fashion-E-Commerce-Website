@@ -1,0 +1,36 @@
+/* Button style inside the topbar */
+.userMenuTopBar {
+  display: flex;
+  gap: 15px;
+  
+}
+
+/* Button style inside the sidebar */
+.userMenusidbar {
+  width: 100%;
+  margin-top: 20px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+.userMenusidbar button span {
+  color: var(--neutral-6);
+}
+.userMenusidbar button:hover span {
+  color: var(--brand);
+}
+
+
+
+  .badg {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color:var(--primary-6);
+  font-size: 12px;
+  font-weight: bold;
+}
+

@@ -1,0 +1,53 @@
+@import url("/src/components/layout/Navbar/Navbar.module.css");
+/* قسم الـ dropdown يحتوي على Sections */
+.dropdownSection {
+  position: absolute;
+  top: 100%;  
+  left: 50%;
+  transform: translate(-40%, 0);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  display: none;
+  gap: 5px; /* يظهر بالـ hover */
+  width: 700px;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+/* تظهر الـ dropdown لما نعمل hover على الـ Menu */
+.menu:hover .dropdownSection {
+  display: flex;
+}
+/* كل Section داخل الـ dropdown */
+.section {
+  margin-bottom: 10px;
+  flex: 1;
+}
+/* عنوان الـ Section */
+
+.section h4 {
+  color: var(--primary-6);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+.section h4 span {
+  color: var(--secondary-3);
+  padding-right: 5px;
+}
+/* قائمة العناصر داخل الـ Section */
+/* كل عنصر */
+.section li a {
+  display: block;
+  font-size: var(--text-md);
+  padding: 5px 10px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+}
+/* تأثير عند المرور على العنصر */
+.section li a:hover {
+  background-color: #f0f0f0;
+}

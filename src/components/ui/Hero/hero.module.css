@@ -1,0 +1,97 @@
+
+
+.hero {
+  position: relative;
+  border-radius: 0.75rem;
+  /* min-height: 80vh; */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  box-shadow: var(--shadow);
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.heroTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.heroSubtitle {
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+  color: #e5e7eb;
+}
+
+.heroActions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.heroSecondary {
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.heroSecondary:hover,
+.heroSecondary:focus-visible {
+  color:var(--secondary-3);
+  outline: none;
+}
+
+/* =========================
+   ♿ Accessibility
+========================= */
+:focus-visible {
+  outline: 2px dashed var(--accent);
+  outline-offset: 4px;
+}
+
+/* =========================
+   📱 Responsive
+========================= */
+
+
+@media (min-width: 640px) {
+
+  .hero {
+    min-height: 80vh;
+    text-align: left;
+    padding: 2rem;
+  }
+
+  .heroActions {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.125rem;
+  }
+}

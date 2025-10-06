@@ -1,0 +1,172 @@
+.footer {
+  background: var(--footer-bg, #f9f9f9);
+  color: var(--footer-text, #333);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+}
+
+[data-theme="dark"] .footer {
+  --footer-bg: #111;
+  --footer-text: #ddd;
+  --accent: #3dbb9a;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: var(--footer-text, #666);
+}
+
+.navSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.newsletter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+.navColumn h3,
+.newsletter h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent, #0077cc);
+}
+
+.navColumn ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navColumn li {
+  margin-bottom: 0.5rem;
+}
+
+.navColumn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navColumn a:hover,
+.navColumn a:focus {
+  color: var(--accent, #0077cc);
+}
+
+.newsletter form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--footer-text, #333);
+  color: #fff;
+}
+
+.social a:hover,
+.social a:focus {
+  background: var(--accent, #0077cc);
+}
+
+.social svg {
+  fill: #fff;
+  width: 18px;
+  height: 18px;
+}
+
+.payments {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.payments img {
+  height: 24px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.bottom div {
+  display: flex;
+  gap: 1rem;
+}
+
+.bottom a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bottom a:hover,
+.bottom a:focus {
+  color: var(--accent, #0077cc);
+}
+
+
+@media (min-width: 768px) {
+  .navSection {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .newsletter form {
+    flex-wrap: nowrap;
+  }
+
+  .bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+}

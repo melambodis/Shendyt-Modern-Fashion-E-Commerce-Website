@@ -1,0 +1,122 @@
+/* Base Color Palettes - 10 steps each */
+:root {
+  --gray-0: #f8f9fa;
+  --gray-1: #f1f3f5;
+  --gray-2: #e9ecef;
+  --gray-3: #dee2e6;
+  --gray-4: #ced4da;
+  --gray-5: #adb5bd;
+  --gray-6: #868e96;
+  --gray-7: #495057;
+  --gray-8: #343a40;
+  --gray-9: #212529;
+
+  --neutral-0: #fafafa;
+  --neutral-1: #f5f5f5;
+  --neutral-2: #e8e8e8;
+  --neutral-3: #d9d9d9;
+  --neutral-4: #bfbfbf;
+  --neutral-5: #8c8c8c;
+  --neutral-6: #595959;
+  --neutral-7: #434343;
+  --neutral-8: #262626;
+  --neutral-9: #1f1f1f;
+
+  --primary-0: #f0f7ff;
+  --primary-1: #e1effe;
+  --primary-2: #c7e2ff;
+  --primary-3: #9ac8fd;
+  --primary-4: #69a9fa;
+  --primary-5: #4a90e2;
+  --primary-6: #2d74c7;
+  --primary-7: #1d5cb4;
+  --primary-8: #13489b;
+  --primary-9: #0d3a7d;
+
+  --secondary-0: #fff5f7;
+  --secondary-1: #ffe9ec;
+  --secondary-2: #ffd7de;
+  --secondary-3: #ffb5c1;
+  --secondary-4: #ff879c;
+  --secondary-5: #fa5a76;
+  --secondary-6: #e23e5c;
+  --secondary-7: #c52a48;
+  --secondary-8: #a71c38;
+  --secondary-9: #8b132b;
+
+  --success-0: #f0fdf4;
+  --success-1: #dcfce7;
+  --success-2: #bbf7d0;
+  --success-3: #86efac;
+  --success-4: #4ade80;
+  --success-5: #22c55e;
+  --success-6: #16a34a;
+  --success-7: #15803d;
+  --success-8: #166534;
+  --success-9: #14532d;
+
+  --warning-0: #fffbeb;
+  --warning-1: #fef3c7;
+  --warning-2: #fde68a;
+  --warning-3: #fcd34d;
+  --warning-4: #fbbf24;
+  --warning-5: #f59e0b;
+  --warning-6: #d97706;
+  --warning-7: #b45309;
+  --warning-8: #92400e;
+  --warning-9: #78350f;
+
+  --danger-0: #fef2f2;
+  --danger-1: #fee2e2;
+  --danger-2: #fecaca;
+  --danger-3: #fca5a5;
+  --danger-4: #f87171;
+  --danger-5: #ef4444;
+  --danger-6: #dc2626;
+  --danger-7: #b91c1c;
+  --danger-8: #991b1b;
+  --danger-9: #7f1d1d;
+
+  --info-0: #ecfeff;
+  --info-1: #cffafe;
+  --info-2: #a5f3fc;
+  --info-3: #67e8f9;
+  --info-4: #22d3ee;
+  --info-5: #06b6d4;
+  --info-6: #0891b2;
+  --info-7: #0e7490;
+  --info-8: #155e75;
+  --info-9: #164e63;
+--background-main: #f8fafc;
+  /* Brand Accents & Gradients */
+  --brand-accent-primary: var(--primary-6);
+  --brand-accent-secondary: var(--secondary-5);
+  --brand-gradient: linear-gradient(
+    135deg,
+    var(--primary-5) 0%,
+    var(--secondary-5) 100%
+  );
+  --brand-gradient-subtle: linear-gradient(
+    135deg,
+    var(--primary-2) 0%,
+    var(--secondary-2) 100%
+  );
+
+  /* Elevation Tokens */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+
+  --transition-fast: 0.2s ease-in-out;     /* سريع (hover, focus) */
+  --transition-medium: 0.4s ease;          /* متوسط (buttons, menus) */
+  --transition-slow: 0.7s ease;            /* بطيء (dropdown, modal) */
+  --transition-soft: 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* smooth */
+  --transition-bounce: 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+
+
+
+

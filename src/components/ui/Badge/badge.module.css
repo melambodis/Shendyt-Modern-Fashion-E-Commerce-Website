@@ -1,0 +1,76 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: default;
+}
+
+.icon {
+  display: inline-flex;
+  margin-right: 0.5rem;
+}
+
+/* Variants */
+.primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.primary:hover {
+  background-color: #0056b3;
+}
+
+.secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.secondary:hover {
+  background-color: #545b62;
+}
+
+.success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.success:hover {
+  background-color: #1e7e34;
+}
+
+.warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.warning:hover {
+  background-color: #e0a800;
+}
+
+.danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.danger:hover {
+  background-color: #bd2130;
+}
+
+/* Sizes */
+.small {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.medium {
+  font-size: 0.875rem;
+  padding: 0.4rem 0.75rem;
+}
+
+.large {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
